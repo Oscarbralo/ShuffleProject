@@ -5,10 +5,11 @@ namespace ShuffleLibrary
 {
     public class ShuffleClass<T>
     {
-        public List<T> Shuffle(List<T> objects, int totalElements)
+        public List<T> Shuffle(List<T> objects)
         {
             Random random = new Random();
             List<T> resultList = new List<T>();
+            int totalElements = objects.Count;
             for (int i = 0; i < totalElements; i++)
             {
                 int maxElements = objects.Count - 1;
